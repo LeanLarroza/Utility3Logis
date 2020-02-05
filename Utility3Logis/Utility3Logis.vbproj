@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2048993D-AFF7-48F1-8599-45DE4E642D25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Utility3Logis.My.MyApplication</StartupObject>
+    <RootNamespace>Utility3Logis</RootNamespace>
+    <AssemblyName>Utility3Logis</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Utility3Logis.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Utility3Logis.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirebirdSql.Data.FirebirdClientOLD">
+      <HintPath>..\packages\Firebird\FirebirdSql.Data.FirebirdClientOLD.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IWshRuntimeLibrary">
+      <HintPath>..\packages\interop\Interop.IWshRuntimeLibrary.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Shell32">
+      <HintPath>..\packages\interop\Interop.Shell32.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utility\AdminPassword.Designer.vb" />
+    <Compile Include="Utility\AdminPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Attendere.Designer.vb" />
+    <Compile Include="Utility\Attendere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Attenzione.Designer.vb" />
+    <Compile Include="Utility\Attenzione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\CalendarForm.Designer.vb" />
+    <Compile Include="Utility\CalendarForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Domanda.Designer.vb" />
+    <Compile Include="Utility\Domanda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Errore.Designer.vb" />
+    <Compile Include="Utility\Errore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\IniFile.vb" />
+    <Compile Include="Utility\KeyBoard.vb" />
+    <Compile Include="Utility\KeyIni.vb" />
+    <Compile Include="Utility\Log.vb" />
+    <Compile Include="Utility\NumeroForm.Designer.vb" />
+    <Compile Include="Utility\NumeroForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Utility.vb" />
+    <Compile Include="Utility\Variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\AdminPassword.resx" />
+    <EmbeddedResource Include="Utility\Attendere.resx" />
+    <EmbeddedResource Include="Utility\Attenzione.resx" />
+    <EmbeddedResource Include="Utility\CalendarForm.resx" />
+    <EmbeddedResource Include="Utility\Domanda.resx" />
+    <EmbeddedResource Include="Utility\Errore.resx" />
+    <EmbeddedResource Include="Utility\NumeroForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bordes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Programmi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PentaStart\PentaStart 2\PentaStart 2.vbproj">
+      <Project>{593a5e4c-ba1c-4c48-b17d-ac7533105e79}</Project>
+      <Name>PentaStart 2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
